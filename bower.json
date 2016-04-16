@@ -1,0 +1,21 @@
+{
+  "name": "hw",
+  "homepage": "https://github.com/87182485/hw",
+  "authors": [
+    "Gary <yfg0462@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.0",
+    "tether": "^1.2.2"
+  }
+}
