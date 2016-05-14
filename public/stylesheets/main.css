@@ -1,0 +1,21 @@
+.navbar {
+  border-radius: 0;
+}
+.navbar.navbar-dark {
+  background-color: #2196F3;
+}
+.figure img {
+  height: 270px;
+  width: 100%;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.footer-list .footer-list-item {
+  display: inline-block;
+  padding: 6px;
+}
