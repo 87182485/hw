@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bootstrap": "4.0",
-    "tether": "^1.2.2"
+    "tether": "^1.2.2",
+    "angular-material": "^1.0.8"
   }
 }
