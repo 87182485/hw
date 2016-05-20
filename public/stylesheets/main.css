@@ -1,21 +1,14 @@
-.navbar {
-  border-radius: 0;
+.md-toolbar-tools .nav-menu {
+  margin: auto 10px;
+  font-size: 16px;
 }
-.navbar.navbar-dark {
-  background-color: #2196F3;
+.main-container {
+  margin: auto;
+  max-width: 1024px;
 }
-.figure img {
-  height: 270px;
-  width: 100%;
+.main-container .jumbotron-title {
+  color: #3F51B5;
 }
-.footer-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-.footer-list .footer-list-item {
-  display: inline-block;
-  padding: 6px;
+.main-cards-container md-card-content p {
+  min-height: 60px;
 }
