@@ -15,7 +15,7 @@
 <div class="main-cards-container" layout="row">
     <div flex-xs flex-gt-xs="33">
         <md-card>
-            <img ng-src="{{imagePath}}" class="md-card-image" alt="Sports">
+            <img src="images/sports.png" class="md-card-image" alt="Sports">
             <md-card-title>
                 <md-card-title-text>
                     <span class="md-headline">Sports</span>
@@ -27,14 +27,14 @@
                 </p>
             </md-card-content>
             <md-card-actions layout="row" layout-align="end">
-                <md-button>Action 1</md-button>
-                <md-button>Action 2</md-button>
+                <md-button ng-link="['Detail', {name:'sports'}]" md-no-ink class="md-primary">View Detail</md-button>
+                <md-button ng-link="['EventForm', {category:'sports'}]" class="md-fab md-primary md-mini"><md-icon class="material-icons">add</md-icon></md-button>
             </md-card-actions>
         </md-card>
     </div>
     <div flex-xs flex-gt-xs="33">
         <md-card>
-            <img ng-src="{{imagePath}}" class="md-card-image" alt="Gaming">
+            <img src="images/gaming.png" class="md-card-image" alt="Gaming">
             <md-card-title>
                 <md-card-title-text>
                     <span class="md-headline">Gaming</span>
@@ -46,14 +46,14 @@
                 </p>
             </md-card-content>
             <md-card-actions layout="row" layout-align="end">
-                <md-button>Action 1</md-button>
-                <md-button>Action 2</md-button>
+                <md-button ng-link="['Detail', {name:'gaming'}]" md-no-ink class="md-primary" ng-href="">View Detail</md-button>
+                <md-button ng-link="['EventForm', {category:'gaming'}]" class="md-fab md-primary md-mini"><md-icon class="material-icons">add</md-icon></md-button>
             </md-card-actions>
         </md-card>
     </div>
     <div flex-xs flex-gt-xs="34">
         <md-card>
-            <img ng-src="{{imagePath}}" class="md-card-image" alt="Coding">
+            <img src="images/movie.svg" class="md-card-image" alt="Coding">
             <md-card-title>
                 <md-card-title-text>
                     <span class="md-headline">Movie</span>
@@ -65,8 +65,8 @@
                 </p>
             </md-card-content>
             <md-card-actions layout="row" layout-align="end">
-                <md-button>Action 1</md-button>
-                <md-button>Action 2</md-button>
+                <md-button ng-link="['Detail', {name:'movie'}]" md-no-ink class="md-primary">View Detail</md-button>
+                <md-button ng-link="['EventForm', {category:'movie'}]" class="md-fab md-primary md-mini"><md-icon class="material-icons">add</md-icon></md-button>
             </md-card-actions>
         </md-card>
     </div>

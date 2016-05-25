@@ -4,10 +4,10 @@
             <span>ISEM 501</span>
         </h2>
         <span flex="5"></span>
-        <a class="nav-menu">Home</a>
-        <a class="nav-menu">Sports</a>
-        <a class="nav-menu">Gaming</a>
-        <a class="nav-menu">Movie</a>
+        <a class="nav-menu" ng-link="['Home']">Home</a>
+        <a class="nav-menu" ng-link="['Detail', {name:'sports'}]">Sports</a>
+        <a class="nav-menu" ng-link="['Detail', {name:'gaming'}]">Gaming</a>
+        <a class="nav-menu" ng-link="['Detail', {name:'movie'}]">Movie</a>
         <span flex></span>
     </div>
 </md-toolbar>

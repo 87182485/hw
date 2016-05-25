@@ -1,5 +1,18 @@
 Event List
 
-<md-button ng-link="['EventForm']" class="md-fab md-primary md-mini" aria-label="add new">
+<md-button ng-link="['EventForm', {category:'new'}]" class="md-fab md-primary md-mini" aria-label="add new">
     <md-icon class="material-icons">add</md-icon>
 </md-button>
+
+<md-content flex layout-padding>
+    <md-list>
+        <md-subheader class="md-no-sticky">{{vm.list.length}} current events</md-subheader>
+        <md-list-item class="md-3-line" ng-repeat="e in vm.list">
+            <img ng-src="images/sports.png" class="md-avatar" alt="{{todos[1].who}}" />
+            <div class="md-list-item-text">
+                <h3>{{e.title}}</h3>
+                <p>Location: <strong>{{e.locationName}}</strong></p>
+            </div>
+        </md-list-item>
+    </md-list>
+</md-content>

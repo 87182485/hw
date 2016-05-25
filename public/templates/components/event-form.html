@@ -3,32 +3,48 @@
         <div layout-gt-xs="row">
             <md-input-container>
                 <label for="eventTitle">Title</label>
-                <input id="eventTitle" ng-model="event.title">
+                <input id="eventTitle" name="eventTitle" ng-model="$ctrl.event.title" ng-required="true">
+                <div ng-messages="eventForm.eventTitle.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
             </md-input-container>
-            <md-datepicker ng-model="event.dateTime" md-placeholder="Date">
+            <md-datepicker ng-model="$ctrl.event.dateTime" name="dateTime" md-placeholder="Date" ng-required="true">
+                <div ng-messages="eventForm.dateTime.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
             </md-datepicker>
         </div>
         <div>
             <md-input-container flex-gt-sm>
                 <label>Category</label>
-                <md-select ng-model="title.category">
-                    <md-option value="Sports">
+                <md-select ng-model="$ctrl.event.category" name="category" ng-required="true">
+                    <md-option value="sports">
                         Sports
                     </md-option>
-                    <md-option value="Gaming">
+                    <md-option value="gaming">
                         Gaming
                     </md-option>
-                    <md-option value="Coding">
-                        Coding
+                    <md-option value="movie">
+                        Movie
                     </md-option>
                 </md-select>
+                <div ng-messages="eventForm.category.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
             </md-input-container>
         </div>
         <div>
             <md-input-container>
                 <label>Location</label>
-                <input type="text" ng-model="event.locationName">
+                <input id="search-input" ng-required="true" name="locationName" type="text" ng-model="$ctrl.event.locationName" placeholder="">
+                <div ng-messages="eventForm.locationName.$error">
+                    <div ng-message="required">This is required.</div>
+                </div>
             </md-input-container>
         </div>
+        <section layout="row" layout-sm="column" layout-align="start center" layout-wrap>
+            <md-button class="md-raised md-primary" ng-click="$ctrl.save()">Save</md-button>
+            <md-button md-no-ink ng-link="['Home']">Cancel</md-button>
+        </section>
     </form>
 </md-content>

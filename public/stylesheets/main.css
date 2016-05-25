@@ -9,6 +9,10 @@
 .main-container .jumbotron-title {
   color: #3F51B5;
 }
+.main-cards-container md-card img {
+  height: 240px;
+  width: 100%;
+}
 .main-cards-container md-card-content p {
   min-height: 60px;
 }
